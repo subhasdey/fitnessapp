@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
-// Initialize OpenAI client with API key
+// Initialize OpenAI client with environment variable
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 // Calorie burn rates per minute for different activities (average values)
