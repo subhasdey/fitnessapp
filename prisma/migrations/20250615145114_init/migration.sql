@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Workout" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "type" TEXT NOT NULL,
+    "duration" INTEGER NOT NULL,
+    "intensity" TEXT NOT NULL,
+    "calories" INTEGER NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
